@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="todoicon.ico" type="image/x-icon">
+    <title>todoapp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>toDo App</header>
+        <div class="inputField">
+            <input type="text" name="add-field" id="add-field" placeholder="Add new task">
+            <input type="button" id="button" value="+" onclick="addTask()">
+        </div>
+        <ul id="list">
+        </ul>
+        <div class="task-count">
+            <p id="counter"></p>
+            <input type="button" value="Clear All" onclick="clearAllTasks()">
+        </div>
+    </div>
+</body>
+</html>

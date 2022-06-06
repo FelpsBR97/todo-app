@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Courier;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#116530,#0B4619);
+}
+.wrapper{
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background: #E8E8CC;
+    border-radius: 5px;
+    padding: 25px;
+}
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+}
+.wrapper .inputField{
+    display: flex;
+    height: 45px;
+    margin-bottom: 8px;
+}
+.inputField #add-field{
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+.inputField #button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #FFCC1D;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.wrapper #list{
+    max-height: 250px;
+    overflow-y: auto;
+}
+#list li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+#list li button{
+    position: absolute;
+    right: -60px;
+    color: #fff;
+    width: 57px;
+    text-align: center;
+    background: red;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+#list li:hover button{
+    right: 0px;
+}
+.wrapper .task-count{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.task-count input{
+    border: none;
+    outline: none;
+    background: #FFCC1D;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px;
+}
